@@ -1,0 +1,63 @@
+.text-center
+{
+    margin: 3% 0;
+}
+
+#userImg
+{
+    width: 12rem;
+    height: 12rem;
+    object-fit:cover;
+    margin: 1% 1%;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+#prodCard
+{
+    width: 75%;
+    height: 15.5rem;
+    margin: 0 0 2% 2%;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    transition: box-shadow 0.5s;
+}
+
+#prodCard:hover
+{
+    box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+#prodName, #prodDesc, #prodDate, #prodPrice 
+{
+    margin: 7% 2% 0 12%;
+}
+
+#deleteIcon
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 20px;
+    opacity: 0%;
+    transition: opacity 0.5s, filter 0.5s;
+}
+
+#prodCard:hover #deleteIcon
+{
+    opacity: 100%;
+}
+
+#deleteIcon:hover
+{ 
+    filter: invert(24%) sepia(97%) saturate(7448%) hue-rotate(1deg) brightness(100%) contrast(119%);
+}
+
+#dateIcon
+{
+    object-fit:scale-down;
+    margin: 7% 2% 0 0;
+    width:30px;
+}

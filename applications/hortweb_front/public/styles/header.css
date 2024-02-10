@@ -1,0 +1,39 @@
+#searchBar {
+    width: 1000px;
+}
+
+#navbar {
+    background: #58863d;
+    color: white;
+    height:100px;
+}
+
+#login {
+    background: #58863d;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 100%;
+    width: 150px;
+    transition: background 0.5s, color 0.5s;
+}
+
+#login:hover {
+    background: white;
+    color: black;
+}
+
+#account {
+    background: #58863d;
+    color: white;
+    vertical-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 100%;
+    transition: background 0.5s, color 0.5s;
+}
+
+#account:hover {
+    background: white;
+    color: black;
+}

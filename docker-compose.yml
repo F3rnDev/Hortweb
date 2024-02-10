@@ -1,0 +1,51 @@
+version: "3.9"
+services:
+  #aplicação web (PHP+NGINX)
+  web:
+    image: urnau/php-community:8.0.19-fpm-nginx
+    # image: urnau/php-community:latest
+    # utilizado quando vamos contruir uma nova imagem
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    networks:
+      - net_principal
+    volumes:
+      - ./applications:/var/www
+      - ./docker/nginx/sites:/etc/nginx/sites-available
+    ports:
+      - "80:80" #http
+      - "443:443" #https
+      - "8080:8080"
+      - "8081:8081"
+      - "8082:8082"
+      - "8083:8083"
+      - "8084:8084"
+      - "8085:8085"
+      - "8086:8086"
+      - "8087:8087"
+      - "8088:8088"
+      - "8089:8089"
+    depends_on:
+      - postgres
+  # aplicação Postgres
+  postgres:
+    image: postgres:14.3-alpine
+    restart: always
+    networks:
+      - net_principal
+    volumes:
+      - POSTGRES_DATA:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres_pass
+      POSTGRES_DB: db_hortweb
+      POSTGRES_USER: admin
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - 6086:5432
+
+networks:
+  net_principal:
+
+volumes:
+  POSTGRES_DATA:

@@ -1,0 +1,164 @@
+.containerBox {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0 10% 0 0;
+}
+
+.containerBox img
+{
+    border-radius: 100%;
+    border: 1px solid black;    
+    height: 500px;
+    width: 500px;
+    object-fit:cover;
+    transition: filter 0.5s;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.containerBox:hover
+{
+    cursor: pointer;
+
+}
+
+.containerBox:hover .centered {
+    opacity: 1;
+}
+
+.containerBox:hover img{
+    filter: brightness(50%);
+}
+
+.text-center
+{
+    margin: 2% 0 5% 0;
+}
+
+#emailInput, #nameInput, #phoneInput
+{
+    margin: 0 0 5% 0;
+    width: 800px;
+    font-size: 25px;
+}
+
+#userInfoFields
+{
+    margin: 0 0 0 5%;
+}
+
+#passInput, #newPassInput, #confirmPassInput
+{
+    margin: 0 0 5% 0;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+#buttonGroup
+{
+    margin: 3% 0 0 24%;
+}
+
+#changePass
+{
+    margin: 0 2% 0 0;
+    background: #58863d;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 25px;
+    height: 100%;
+    width: 200px;
+    transition: background 0.5s, color 0.5s;    
+}
+
+#changePass:hover
+{
+    background: white;
+    color: black;
+}
+
+#saveChangeUser
+{
+    margin: 0 2% 0 0;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 25px;
+    height: 100%;
+    width: 270px;
+    transition: background 0.5s, color 0.5s;   
+}
+
+#saveChangeUser:hover
+{
+    background: white;
+    color: black;
+}
+
+.password-toggle
+{
+    position:absolute;
+    cursor: pointer;
+}
+
+.password-toggle img
+{
+    width: 35px;
+    height: 35px;
+    transform: translate(720px, -78px);
+}
+
+.close
+{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    transition: color 0.2s;
+}
+
+.close:hover
+{
+    color: red;
+}
+
+#saveChangePass
+{
+    margin: 0 2% 0 0;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    height: 100%;
+    width: 120px;
+    transition: background 0.5s, color 0.5s;  
+}
+
+#saveChangePass:hover
+{
+    background: white;
+    color: black;
+}
+
+#editIcon
+{
+    width: 25px;
+    height: 25px;
+    margin: 0 0 5% 0;
+    filter: invert(100%);  
+    transition: filter 0.5s; 
+}
+
+#saveChangePass:hover #editIcon
+{
+    filter: invert(0%);
+}

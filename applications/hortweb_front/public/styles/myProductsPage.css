@@ -1,0 +1,232 @@
+.text-center
+{
+    margin: 3% 0;
+}
+
+#prodImg
+{
+    width: 12rem;
+    height: 12rem;
+    object-fit:cover;
+    margin: 1% 1%;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+#prodCard
+{
+    width: 75%;
+    height: 15.5rem;
+    margin: 0 0 2% 2%;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    transition: box-shadow 0.5s;
+}
+
+#prodCard:hover
+{
+    box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+#prodName, #prodDesc, #prodDate, #prodPrice
+{
+    margin: 7% 2% 0 12%;
+}
+
+#deleteIcon
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 20px;
+    opacity: 0%;
+    transition: opacity 0.5s, filter 0.5s;
+}
+
+#prodCard:hover #deleteIcon
+{
+    opacity: 100%;
+}
+
+#deleteIcon:hover
+{ 
+    filter: invert(24%) sepia(97%) saturate(7448%) hue-rotate(1deg) brightness(100%) contrast(119%);
+}
+
+#dateIcon
+{
+    object-fit:scale-down;
+    margin: 7% 2% 0 0;
+    width:30px;
+}
+
+.container
+{
+    margin: 0 0 0 14%;
+
+}
+
+#newProdBttn img
+{
+    position: absolute;
+    object-fit:scale-down;
+    margin: 0.3% 0 0 0.2%;
+    width:30px;
+    filter: invert(100%);
+    transition: filter 0.5s;
+}
+
+#newProdBttn:hover img
+{
+    filter: invert(0%);
+}
+
+#newProdBttn
+{
+    margin: 0 0 3% 0;
+    background: #58863d;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 25px;
+    height: 100%;
+    width: 215px;
+    transition: background 0.5s, color 0.5s;    
+}
+
+#newProdBttn:hover
+{
+    background: white;
+    color: black;
+}
+
+#saveChanges
+{
+    margin: 0 2% 0 0;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    height: 100%;
+    width: 120px;
+    transition: background 0.5s, color 0.5s;  
+}
+
+#saveChanges:hover, #viewProd:hover, #createProd:hover
+{
+    background: white;
+    color: black;
+}
+
+#editIcon, #addIcon
+{
+    width: 25px;
+    height: 25px;
+    margin: 0 0 5% 0;
+    filter: invert(100%);  
+    transition: filter 0.5s; 
+}
+
+#saveChanges:hover #editIcon, #createProd:hover #addIcon
+{
+    filter: invert(0%);
+}
+
+#viewProd
+{
+    margin: 0 2% 0 0;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    height: 100%;
+    width: 200px;
+    transition: background 0.5s, color 0.5s;  
+}
+
+#createProd
+{
+    margin: 0 2% 0 0;
+    color: white;
+    background: #58863d;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    height: 100%;
+    width: 180px;
+    transition: background 0.5s, color 0.5s;  
+}
+
+.close
+{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    transition: color 0.2s;
+}
+
+.close:hover
+{
+    color: red;
+}
+
+.containerBox {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0 10% 0 0;
+}
+
+.containerBox img
+{
+    border-radius: 100%;
+    border: 1px solid black;    
+    height: 400px;
+    width: 400px;
+    object-fit:cover;
+    transition: filter 0.5s;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.containerBox:hover
+{
+    cursor: pointer;
+
+}
+
+.containerBox:hover .centered {
+    opacity: 1;
+}
+
+.containerBox:hover img{
+    filter: brightness(50%);
+}
+
+#prodNameInput, #prodPriceInput, #prodDateInput
+{
+    margin: 0 0 5% 0;
+    width: 500px;
+    font-size: 25px;
+}
+
+#prodDescField
+{
+    margin: 5% 0 0 0;
+}
+
+#prodDescInput
+{
+    width: 100%;
+    height: 200px;
+    font-size: 18px;
+}

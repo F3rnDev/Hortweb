@@ -1,0 +1,97 @@
+body { 
+    background: url("../assets/images/background.jpg") no-repeat center center fixed; 
+    backdrop-filter: brightness(30%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card
+{
+    background:#58863d;
+    border-radius: 80px; 
+    margin: 5% 0;
+}
+
+.progress
+{
+    margin-top: 5px;
+}
+
+.progress-bar {
+    border-right: solid 5px #58863d;
+}
+.progress-bar:last-child {
+    border: none; 
+}
+
+h1
+{
+    color: white;
+    margin: 0.5% 0;
+}
+
+h3
+{
+    color: white;
+    margin: 1% 0;
+}
+
+#emailInput, #selectType, #nameInput
+{
+    margin: 5% 0;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+#passInput, #confirmPassInput, #phoneInput
+{
+    margin: 2% 0;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+#loginBttn, #continue1, #continue2, #back2, #continue3, #back3
+{
+    margin: 5% 0;
+    background: #58863d;
+    color: white;
+    border-radius: 20px;
+    border-color: black;
+    font-size: 25px;
+    height: 100%;
+    width: 200px;
+    transition: background 0.5s, color 0.5s;   
+}
+
+#loginBttn:hover, #continue1:hover, #continue2:hover, #back2:hover, #continue3:hover, #back3:hover
+{
+    background: white;
+    color: black;
+}
+
+#noAccount
+{
+    margin: 5% 0;
+    color: white;
+    font-size: 20px;
+}
+
+#passHide, #passShow, #confirmPassShow, #confirmPassHide, #hide, #show
+{
+    position:absolute;
+    top: 5px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#passGroup
+{
+    margin: 5% 0;
+    position: relative;
+}
